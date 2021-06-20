@@ -1,0 +1,14 @@
+ <!--账号-->
+ <view class="account">
+  <view class="title"><label class="loginLab">账号:</label></view> 
+  <view class="num"><input class="inputText" placeholder="用户名/邮箱/手机号" name="account"  bindchange="getAccount" /></view> 
+ </view>
+ 
+ <!--密码-->
+ <view class="account">
+ <view class="title"><label class="loginLab">密码:</label></view>
+ <view class="num"><input class="inputText" password="true" placeholder="请输入密码" name="pwd" bindchange="getPwd" /></view> 
+</view>
+ <!--按钮-->
+  <button class="regBtn" type="primary" bindtap="reg" form-type="submit">注册</button> 
+  <button class="loginBtn" type="primary" bindtap="login" form-type="submit">登录</button> 

@@ -1,0 +1,13 @@
+.ai-view{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 450rpx;
+}
+
+.answer{
+  width: 150rpx;
+  height: 150rpx;
+}

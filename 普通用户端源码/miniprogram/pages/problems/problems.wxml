@@ -1,0 +1,31 @@
+<view class="index-top">
+  <view class="{{index <= curring && curring != 0?'top-blue':'top-currin'}} {{index > 0 && curring < 2?'top-fint':'top-ping'}} {{2 == curring?'top-nux':''}} {{2 < curring?'top-name':''}}" wx:for="{{4}}" wx:key="index">
+    <view class="{{index <= curring?'top-buing':'top-bloc'}}">
+      <text>√</text>
+      <span>{{index+1}}</span>
+    </view>
+  </view>
+</view>
+<view class="centent" wx:for="{{detail}}" wx:key="index" wx:if="{{index == number}}">
+  <view class="centent-title">{{index+1}}. {{item.title}}</view>
+  <radio-group class="centent-group">
+    <radio class="group-radio" bindtap="radioChange" wx:for="{{item.array}}" wx:for-item="cell" data-index="{{index}}" data-id="{{item.id}}" wx:key="index" checked="{{false}}">
+      <span class="radio-span" wx:if="{{index == 0}}">A.</span>
+      <span class="radio-span" wx:if="{{index == 1}}">B.</span>
+      <span class="radio-span" wx:if="{{index == 2}}">C.</span>
+      <span class="radio-span" wx:if="{{index == 3}}">D.</span>
+      <text>{{cell.name}}</text>
+    </radio>
+  </radio-group>
+</view>
+<view class="bottom" wx:if="{{number != detail.length}}">
+<view bindtap="previous" wx:if="{{number != 0}}">上一步</view>
+<view bindtap="nextstep" style="{{number == 0?'margin:0 30%;':''}}">下一步</view>
+</view> 
+<view class="submission" wx:if="{{number == detail.length}}">
+  <!-- <view>
+  <image src="https://profile.csdnimg.cn/0/9/6/3_qq_43764578"></image>
+  </view> -->
+  <view class="submission-center" bindtap="subsic">提交答案</view>
+  <view class="back" bindtap="backto">再来一套</view>
+</view>

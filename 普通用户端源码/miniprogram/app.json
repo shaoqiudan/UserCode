@@ -1,0 +1,55 @@
+{
+  "pages": [
+    "pages/first/first",
+    "pages/ai/index",
+    "pages/ai/camera/camera",
+    "pages/ai/search",
+    "pages/sort/sort",
+    "pages/sort/detail/index",
+    "pages/me/me",
+    "pages/problems/problems",
+    "pages/start/start",
+    "pages/errorproblem/errorproblem",
+    "pages/correctrecord/correctrecord",
+    "pages/person/person",
+    "pages/updatepwd/updatepwd"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#00cc77",
+    "navigationBarTitleText": "智能垃圾分类",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/ai/index",
+        "text": "搜索",
+        "iconPath": "images/search_defaut.png",
+        "selectedIconPath": "images/search_select.png"
+      },
+
+      {
+        "pagePath": "pages/sort/sort",
+        "text": "分类",
+        "iconPath": "images/icon_sort_default.png",
+        "selectedIconPath": "images/icon_sort.png"
+      },
+      {
+        "pagePath": "pages/start/start",
+        "text": "答题",
+        "iconPath": "/images/tiku_defacult.png",
+        "selectedIconPath": "images/tiku.png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "我的",
+        "iconPath": "images/my_defacult.png",
+        "selectedIconPath": "images/my.png"
+      }
+      
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

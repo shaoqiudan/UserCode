@@ -1,0 +1,4 @@
+<view class='ai-view'>
+  <image src='/images/开始.png' class='answer'  bindtap="problem" />
+  <text class='txt'>开始答题</text>
+</view>
